@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900');
+
+
+body {
+	overflow-x: hidden;
+	background-color: #EEE;
+    height: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+.loginbox {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	float: left;
+	color: white;
+}
+
+.imgprofilogin{
+	width: 80px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+}
+
+.mainlogin {
+    border-radius: 15px;
+	background-color: cadetblue;
+	width: 400px;
+	padding: 15px;
+
+}
+
+.mainlogin table, .CreAcc table {
+	margin-top: 10px;
+}
+
+.mainlogin table tr td, .CreAcc table tr td {
+	padding-top: 10px;
+}
+
+.mainlogin .loginicon {
+	width: 20px;
+}
+
+.mainlogin input, .CreAcc input {
+    width: 220px;
+	font-size: 14px;
+	border-radius: 5px;
+}
+
+.mainlogin input[type=text]:focus, .mainlogin input[type=password]:focus {
+    border: 2px solid #87cbce;
+}
+
+
+
+.loginput {
+	padding: 0 0 0 5px;
+    border: 2px #6EADAF solid;
+    border-radius:5px;
+    width: 250px;
+}
+
+.editsubmit {
+    background-color:#6EADAF;
+    color:white;
+    font-size:13px;
+    height:30px;
+    width:150px;
+    border:2px #6EADAF solid;
+	cursor: pointer;
+}
+
+.editusertable tr td {
+	padding: 15px 0 0 15px;
+}
+
+.btn_login {
+    background-color: #EEE;
+    border: none;
+    color: cadetblue;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	font-weight: 600;
+}
+
+.btn_login:hover {
+	color: darkcyan;
+}
+.btn_login:active {
+	font-size: 14px!important;
+}
+
+#fail, #fail2 {
+	position: absolute;
+	text-align: left;
+	display: none;
+}
+
+#fail img, #fail2 img {
+	width: 25px;
+	height: 25px;
+	margin-top: -25px;
+	
+}
+
+#novaAcc {
+	cursor: pointer;
+}
+
+#novaAcc:hover {
+	color: #d0d0d0;
+}
+
+.novaAcc {
+	display: none;
+}
+
+.novaAccBG {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.8);
+	z-index: 2;
+}
+
+.novaAccBox {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	float: left;
+	color: white;
+	z-index: 3;
+}
+
+.novaAccCont {
+	border-radius: 15px;
+	background-color: cadetblue;
+	width: 400px;
+	padding: 15px;
+	
+}
+
+.menu {
+	background-color: cadetblue;
+	min-height: 100%;
+	text-align: center;
+	padding: 50px 0px 0px 0px;
+}
+
+.menu img {
+	border-radius:50%;
+	width: 100px;
+    height: 100px;
+}
+.menu .menuimg {
+	margin-bottom: 50px;
+	color:white;
+	font-size: 12px;
+}
+
+.menu button {
+	width: 100%;
+	background-color: #6eadaf;
+	border-bottom: solid black 1px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	cursor: pointer;
+}
+
+.menu button:hover {
+	background-color: #5e9698;
+}
+.menu .logout {
+	background-color: firebrick;
+}
+.menu .logout:hover {
+	background-color: darkred;
+}
+
+.conteudo {
+	background-color: white;
+    min-height:100%;
+	max-height: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+
+.conteudo::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #CCC;
+}
+
+.conteudo::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: cadetblue;
+}
+
+.perfil {
+	padding: 0 0 0 0;
+    background-color:white;
+    height:100%;
+}
+
+.profileimage {
+    position:absolute;
+    left:50%;
+    text-align:center;
+    transform: translate(-50%, -62%);
+}
+
+.profileimage img {
+	border-radius: 50%;
+	border: 4px solid white;
+	width: 150px;
+    height: 150px;
+}
+
+.profileinfo {
+    text-align:center;
+    padding-top:66px;
+    width:50%;
+    margin:0 auto;
+}
+
+#profilename {
+    font-weight:bold;
+    font-size:25px;
+    color:5F9EA0;
+}
+
+.profilesmall {
+    font-size:12px;
+    color:8e8e8e;
+}
+
+#profileabout {
+    font-size:15px;
+    margin-bottom:40px;
+}
+
+#profileborder {
+    border-bottom:3px solid #6EADAF;
+}
+
+#profilefeed {
+    margin-top:40px;
+    padding-left:15px;
+}
+
+#profileeditbutton {
+    position:absolute;
+    left:50%;
+    transform: translate(-50%, -56%);
+    height:32px;
+    width:100px;
+    background-color:#6EADAF;
+    border:3px solid #6EADAF;
+    border-radius:20px;
+    color:white;
+    font-size:13px;
+}
+
+
+#profileeditbutton:hover {
+    background-color:cadetblue;
+	border:3px solid cadetblue;
+}
+
+#postsbutton {
+    position:absolute;
+    left:50%;
+    transform: translate(-50%, -56%);
+    height:32px;
+    width:100px;
+    background-color:#6EADAF;
+    border:3px solid #6EADAF;
+    border-radius:20px;
+    color:white;
+    font-size:13px;
+}
+
+.inserepost {
+	width: 100%;
+	border: 1px solid cadetblue;
+	border-radius: 0.8em;
+	resize: none;
+	margin-top: 25px;
+	outline: none;
+	padding: 0.5em 1em 1em 1em;
+	height: 4em;
+	overflow: hidden;
+}
+
+.inserepost:focus {
+	box-shadow: inset 0 0 1px 1px cadetblue;
+}
+
+.submitpost {
+	background-color: cadetblue;
+    border: none;
+    color: white;
+    padding: 5px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+	cursor: pointer;
+	float:right;
+	width: 10em;
+	border-radius: 0.4em;
+}
+
+.postar {
+	width: 100%;
+}
+.postar tr td {
+	padding-top: 10px;
+}
+
+.postbuttons {
+	display:none;
+}
+
+.feed-name{
+	font-size: 12px;
+}
+
+.posts tr td {
+	padding: 0;
+}
+
+.user_list {
+	width: 100%;
+	margin-top: 30px;
+}
+
+.user_list tr td {
+	padding:15px 15px 15px 0px;;
+
+}
+
+.inserepost2 {
+	width: 100%;
+	border: 1px solid cadetblue;
+	border-radius: 0.8em;
+	resize: none;
+	margin-top: 5px;
+	outline: none;
+	padding: 0.5em 1em 1em 1em;
+	height: 4em;
+	overflow: hidden;
+}
+
+.container2 {
+  position: relative;
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container2:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.FlexEmbed {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.FlexEmbed:before {
+  content: "";
+  display: block;
+  width: 100%;
+}
+
+.FlexEmbed--2by1:before {
+  padding-bottom: 50%;
+}
+
+.CoverImage {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto 1em;
+  width:100%;
+  max-height:297px;
+  transition: 0.5s ease;
+}
+
+
+.cover_hover {
+	position:absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	cursor: pointer;
+	text-align: right;
+	padding: 15px;
+}
+
+.CoverImage:hover .cover_hover {
+	opacity: 1;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.profileimage:hover .image {
+  opacity: 0.3;
+}
+
+.profileimage:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: cadetblue;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+}
+ 
+.editimage {
+	cursor: pointer;
+}
+
+.menuToggle {
+	display: none;
+	position: fixed;
+	z-index: 99999;
+	padding: 0.4em;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 24px;
+    height: 4px;
+    background-color: cadetblue;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+	background-color: firebrick;
+	width: 35px;
+    height: 5px;
+	margin: 6px 0;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+	background-color: firebrick;
+	width: 35px;
+    height: 5px;
+	margin: 6px 0;
+}
+
+
+
+@media only screen and (max-width: 575px) {
+    .menu {
+        display: none;
+		position: fixed;
+		z-index: 99998;
+    }
+	.menuToggle {
+		display: inline-block;
+    	cursor: pointer;
+	}
+}
+
