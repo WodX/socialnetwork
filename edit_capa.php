@@ -16,11 +16,12 @@ if(!isset($_SESSION['loggedIN'])){
 
 include "includes/edit_img.php";
 
+include "includes/connection.php":
 
-$servername = "localhost";
-$username = "andre";
-$password = "andre.2019";
-$dbname = "andrenun_work";
+$servername = "";
+$username = "";
+$password = "";
+$dbname = "";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
