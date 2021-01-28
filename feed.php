@@ -18,8 +18,10 @@
 	
 	<table class="posts"  width="100%">	
 <?php
-	
-$ligacao = mysqli_connect('localhost', 'andre', 'andre.2019', 'andrenun_work') or die ('Não foi possivel ligar à base de dados');
+
+// include "includes/connection.php"; -- Use this --
+		
+$ligacao = mysqli_connect('', '', '', '') or die ('Não foi possivel ligar à base de dados');
 
 $sql = 'SELECT * FROM feed ORDER BY Feed_id DESC';
 
