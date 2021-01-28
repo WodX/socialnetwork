@@ -5,8 +5,8 @@
 
     $encrypt_method = "AES-256-CBC";
     //pls set your unique hashing key
-    $secret_key = 'lolol';
-    $secret_iv = 'lolada12';
+    $secret_key = '';
+    $secret_iv = '';
 
     // hash
     $key = hash('sha256', $secret_key);
