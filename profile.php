@@ -1,7 +1,9 @@
 <?php include 'includes/menu.php'; ?>	
 
 <?php
-	$ligacao = mysqli_connect('localhost', 'andre', 'andre.2019', 'andrenun_work') or die ('Não foi possivel ligar à base de dados');
+	// include "includes/connection.php"; -- Use this --
+	
+	$ligacao = mysqli_connect('', '', '', '') or die ('Não foi possivel ligar à base de dados');
 
 	
 	$sql3 = mysqli_query($ligacao, 'SELECT * FROM users WHERE User_id='.$_SESSION['User_id']);
