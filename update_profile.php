@@ -14,10 +14,12 @@ if(!isset($_SESSION['loggedIN'])){
 
 <?php
 
-$servername = "localhost";
-$username = "andre";
-$password = "andre.2019";
-$dbname = "andrenun_work";
+// include "includes/connection.php"; -- Use this --
+
+$servername = "";
+$username = "";
+$password = "";
+$dbname = "";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
