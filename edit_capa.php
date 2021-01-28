@@ -16,7 +16,7 @@ if(!isset($_SESSION['loggedIN'])){
 
 include "includes/edit_img.php";
 
-include "includes/connection.php":
+// include "includes/connection.php"; -- Use this --
 
 $servername = "";
 $username = "";
