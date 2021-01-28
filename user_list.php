@@ -13,8 +13,10 @@
 		<th colspan="2">Ações</th>
 	</tr>
 <?php
+
+// include "includes/connection.php"; -- Use this --
 	
-$ligacao = mysqli_connect('localhost', 'andre', 'andre.2019', 'andrenun_work') or die ('Não foi possivel ligar à base de dados');
+$ligacao = mysqli_connect('', '', '', '') or die ('Não foi possivel ligar à base de dados');
 
 
 $sql = 'SELECT * FROM users ORDER BY User_id ASC';
