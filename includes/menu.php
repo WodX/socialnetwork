@@ -10,7 +10,10 @@ if(!isset($_SESSION['loggedIN'])){
 ?>
 
 <?php
-	$ligacao = mysqli_connect('localhost', 'andre', 'andre.2019', 'andrenun_work') or die ('Não foi possivel ligar à base de dados');
+
+	//include connection
+	
+	$ligacao = mysqli_connect('localhost', '', '', '') or die ('Não foi possivel ligar à base de dados');
 	
 	$sql = mysqli_query($ligacao, 'SELECT * FROM users WHERE User_id='.$_SESSION['User_id']);
 	
