@@ -10,7 +10,9 @@
 	
     if (isset($_POST['login'])) {
 		
-		$connection = new mysqli('localhost', 'andre', 'andre.2019', 'andrenun_work');
+	    	//include connection
+	    
+		$connection = new mysqli('localhost', '', '', '');
 		
      	$user = $connection->real_escape_string($_POST['userPHP']);
 		$password = md5($connection->real_escape_string($_POST['passwordPHP']));
